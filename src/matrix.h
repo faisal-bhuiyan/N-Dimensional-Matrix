@@ -22,18 +22,19 @@ public:
 
     inline Matrix operator+(const Matrix& rhs) {
         Matrix result;
-        for (size_t i=0; i<=this->Size(); i++) {
+        for (size_t i = 0; i <= this->Size(); i++) {
             result[i] = this->elems_[i] + rhs[i];
         }
         return result;
     }
 
-    // TODO Debug
     inline Matrix operator*(const Matrix& rhs) {
         Matrix result;
         for (size_t i=0; i<3; i++) {
             for (size_t j=0; j<3; j++) {
-                result[3*i+j] = this->elems_[3*i+j] * rhs[3*j+i];
+                // multiply i-th row of this with j-th column of rhs
+                result[3*i+j] = this->elems_[3*i] * rhs[j] +
+                    this->elems_[3*i+1] * rhs[3*1+j] + this->elems_[3*i+2] * rhs[3*2+j];
             }
         }
         return result;

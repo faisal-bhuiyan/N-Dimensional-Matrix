@@ -55,43 +55,33 @@ int main() {
     assert(m4[8] == 18.);
     std::cout << "Element check for m4 complete!\n";
 
-    // // Let's multiply m1 and m2 and store the result into a new matrix m5
-    // auto m5 = m1 * m2;
+    // Let's multiply m1 and m2 and store the result into a new matrix m5
+    auto m5 = m1 * m2;
 
-    // assert(m5.Size() == 9);
-    // std::cout << "Size check for m5 complete!\n";
+    assert(m5.Size() == 9);
+    std::cout << "Size check for m5 complete!\n";
 
-    // assert(m5[0] == 0.);
-    // assert(m5[1] == 0.);
-    // assert(m5[2] == 0.);
-    // assert(m5[8] == 0.);
-    // std::cout << "Element check for m5 complete!\n";
+    assert(m5[0] == 0.);
+    assert(m5[1] == 0.);
+    assert(m5[2] == 0.);
+    assert(m5[8] == 0.);
+    std::cout << "Element check for m5 complete!\n";
 
-    // // Let's multiply m1 and m1 and store the result into a new matrix m6
-    // auto m6 = m1 * m1;
+    // Let's multiply m1 and m1 and store the result into a new matrix m6
+    auto m6 = m1 * m1;
 
-    // assert(m6.Size() == 9);
-    // std::cout << "Size check for m6 complete!\n";
+    assert(m6.Size() == 9);
+    std::cout << "Size check for m6 complete!\n";
 
-    // std::cout << "m6[0] = " << m6[0] << "\n";
-    // std::cout << "m6[1] = " << m6[1] << "\n";
-    // std::cout << "m6[2] = " << m6[2] << "\n";
-    // std::cout << "m6[3] = " << m6[3] << "\n";
-    // std::cout << "m6[4] = " << m6[4] << "\n";
-    // std::cout << "m6[5] = " << m6[5] << "\n";
-    // std::cout << "m6[6] = " << m6[6] << "\n";
-    // std::cout << "m6[7] = " << m6[7] << "\n";
-    // std::cout << "m6[8] = " << m6[8] << "\n";
-
-    // assert(m6[0] == 30.);
-    // assert(m6[1] == 36.);
-    // assert(m6[2] == 42.);
-    // assert(m6[3] == 66.);
-    // assert(m6[4] == 81.);
-    // assert(m6[5] == 96.);
-    // assert(m6[6] == 102.);
-    // assert(m6[7] == 126.);
-    // assert(m6[8] == 150.);
-    // std::cout << "Element check for m6 complete!\n";
+    assert(m6[0] == 30.);
+    assert(m6[1] == 36.);
+    assert(m6[2] == 42.);
+    assert(m6[3] == 66.);
+    assert(m6[4] == 81.);
+    assert(m6[5] == 96.);
+    assert(m6[6] == 102.);
+    assert(m6[7] == 126.);
+    assert(m6[8] == 150.);
+    std::cout << "Element check for m6 complete!\n";
 }
 

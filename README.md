@@ -1,8 +1,8 @@
 # N-dimensional-Matrix
-This is a basic N-dimensional matrix library implemented in C++. Based off the problem presented in Chapter 29 of [The C++ Programming Language](https://www.stroustrup.com/4th.html).
+This is a basic N-dimensional matrix library implemented in C++. Based off the problem presented in Chapter 29 of [The C++ Programming Language, 4th Edition](https://www.stroustrup.com/4th.html).
 
 ## Design Requirements
-Before proceeding with an implementation, consider what properties we might like to have:
+We have the following requirements:
 - N dimensions, where N is a parameter that can vary from 0 to many, without specialized code for every dimension.
 - N-dimensional storage is useful in general, so the element type can be anything we can store (like a vector element).
 - The mathematical operations should apply to any type that can reasonably be described as a number, including a Matrix.
